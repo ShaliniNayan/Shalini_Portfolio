@@ -124,7 +124,7 @@ Example commands:
 
 ```sh
   cd my-folder
-  Clone this repository to your desired folder:
+  git clone git@github.com:ShaliniNayan/Shalini_Portfolio.git
 ```
 --->
 
