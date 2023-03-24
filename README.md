@@ -1,5 +1,5 @@
 # Shalini_Portfolio
-# Hello-world
+# Portfolio: setup and mobile first
 
 
 REQUIRED SECTIONS:
@@ -52,7 +52,7 @@ OPTIONAL SECTIONS:
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [Shalini_Portfolio] <a name="Shalini_Portfolio"></a>
+# 📖 [Shalini_Portfolio] <a name="Portfolio: setup and mobile first"></a>
 
 
 **[Shalini_Portfolio]** This is my second project Portfolio: setup and mobile first.
