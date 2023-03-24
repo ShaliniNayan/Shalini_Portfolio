@@ -1,3 +1,153 @@
-.h1 {
-  background-color: aliceblue;
+.background {
+  display: flex;
+  flex-direction: column;
+  background-image: url("images/header-shapes mobile.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-color: #fff;
+  justify-content: center;
+  height: 665px;
+  padding-top: 0;
+  padding-right: 24px;
+  border-bottom-left-radius: 0%;
+}
+
+.body {
+  margin: 0%;
+  width: 375px;
+  height: 718px;
+}
+
+.head {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: flex-start;
+  height: 70px;
+}
+
+.logo {
+  width: 76px;
+  height: 20px;
+  font-family: sans-serif, "Poppins";
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #6070ff;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 20px;
+}
+
+.nav-bar {
+  border: none;
+  background-color: #fff;
+  margin-top: 20px;
+  margin-right: 20px;
+  width: 18px;
+  height: 12px;
+}
+
+.header {
+  height: 150px;
+  font-family: sans-serif, "Poppins";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 52px;
+  display: flex;
+  margin-left: 20px;
+  margin-top: -80px;
+  align-items: center;
+  color: #172b4d;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.text {
+  display: flex;
+  width: 327px;
+  height: 146px;
+  font-family: sans-serif, "Poppins";
+  font-style: normal;
+  font-weight: 535;
+  font-size: 18px;
+  line-height: 24px;
+  margin-left: 20px;
+  margin-top: -26px;
+  color: #344563;
+  flex: none;
+  order: 1;
+}
+
+.link {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 545;
+  margin-left: 20px;
+  text-decoration: none;
+  color: #7f8cff;
+}
+
+.icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 170.17px;
+  height: 20px;
+  flex: none;
+  order: 3;
+  flex-grow: 0;
+  margin-left: -20px;
+  list-style: none;
+}
+
+.twitter {
+  left: 6.4%;
+  right: 88.27%;
+  top: 79.81%;
+  bottom: 18.88%;
+  color: #505f79;
+}
+
+.dot {
+  position: absolute;
+  left: 15.8%;
+  right: 81.87%;
+  top: 72.41%;
+  bottom: 21.36%;
+  color: #505f79;
+}
+
+.medium {
+  left: 27.47%;
+  right: 67.2%;
+  top: 78.15%;
+  bottom: 19.21%;
+  color: #505f79;
+}
+
+.github {
+  left: 38.13%;
+  right: 57.07%;
+  top: 77.81%;
+  bottom: 18.87%;
+  color: #505f79;
+}
+
+.angellist {
+  left: 48%;
+  right: 48.22%;
+  top: 77.81%;
+  bottom: 18.87%;
+  color: #505f79;
 }
