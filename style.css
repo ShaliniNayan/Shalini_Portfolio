@@ -296,3 +296,11 @@ li {
   color: #253858;
   margin-left: 20px;
 }
+
+.contact-form {
+  background-color: #6070ff;
+  border-top-left-radius: 80px;
+}
+form {
+  border: 2px solid #000;
+}
