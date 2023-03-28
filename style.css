@@ -299,8 +299,61 @@ li {
 
 .contact-form {
   background-color: #6070ff;
-  border-top-left-radius: 80px;
+  border-top-left-radius: 50px;
+  text-align: center;
+  height: 800px;
+  padding-top: 150px;
+  color: #ffffff;
+  margin-bottom: 30px;
 }
-form {
-  border: 2px solid #000;
+
+#contact-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  align-items: center;
+}
+
+button {
+  height: 48px;
+  width: 142px;
+  left: 24px;
+  top: 5317px;
+  border-radius: 8px;
+  padding: 12px 16px 12px 16px;
+  background-color: white;
+  color: #6070ff;
+}
+
+#name {
+  height: 30px;
+  margin-bottom: 10px;
+  margin-top: 30px;
+  width: 300px;
+  color: #172b4d;
+}
+
+#email {
+  height: 30px;
+  margin-bottom: 10px;
+  width: 300px;
+  color: #172b4d;
+}
+
+#message {
+  margin-bottom: 10px;
+  width: 300px;
+  height: 150px;
+  color: #b3bac5;
+}
+
+p1 {
+  height: 709.16552734375px;
+  width: 265px;
+  left: 153px;
+  top: 4651.99951171875px;
+  border-radius: 0px;
+  margin-bottom: 100px;
+  color: #ebebff;
 }
