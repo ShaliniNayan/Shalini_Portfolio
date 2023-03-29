@@ -254,8 +254,11 @@ button:active {
 }
 
 .contact-me {
-  background: url("images/Ellipse-3.png"), url("./images/Rectangle-4.png"),
-    url("./images/Rectangle-7.png"), url("images/Ellipse-5.png") #6070ff;
+  background:
+    url("images/Ellipse-3.png"),
+    url("./images/Rectangle-4.png"),
+    url("./images/Rectangle-7.png"),
+    url("images/Ellipse-5.png") #6070ff;
 
   /* background-position: 145px 5px; */
   background-position: 100% 10%, 100% 5.5%, 88% 91.2%, 78% 92%;
