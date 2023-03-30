@@ -116,7 +116,7 @@ body {
   align-items: flex-start;
   gap: 12px;
   margin: 92px 0;
-  background-image: url("./assets/images/mobile-bg-image.png");
+  background-image: url("images/mobile-bg-image.png");
   background-repeat: no-repeat;
   background-size: cover;
   margin-top: 0;
@@ -401,7 +401,7 @@ body {
   width: 100%;
   height: 900px;
   border-radius: 70px 0 0 0;
-  background-image: url("./assets/images/contact\ form\ shapes-mobile@2x.png");
+  background-image: url("images/contact\ form\ shapes-mobile@2x.png");
   background-repeat: no-repeat;
   background-position: top right;
   background-size: cover;
