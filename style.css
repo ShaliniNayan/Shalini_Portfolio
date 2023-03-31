@@ -595,14 +595,10 @@ textarea::placeholder {
     border-radius: 0 0 0 70px;
   }
 
-  popup:hover {
+  #popup:hover {
     cursor: pointer;
     color: #fff;
     background-color: #6070ff;
-  }
-
-  .popup:active {
-    box-shadow: 2px 2px 5px #6070ff;
   }
 
   .mobile-container {
@@ -663,19 +659,6 @@ textarea::placeholder {
     text-decoration: none;
   }
 
-  .tab-links:hover a {
-    text-decoration: none;
-    color: #344563;
-    background-color: #e5e5e5;
-    transform: scale(1.04);
-  }
-
-  .modal-links {
-    display: flex;
-    margin-top: 6px;
-    padding-left: 30px;
-  }
-
   .modal-links a {
     margin: 0 0.5rem;
     font-weight: 700;
@@ -688,6 +671,19 @@ textarea::placeholder {
     padding: 10px 23px;
     align-items: center;
     margin-right: 0%;
+  }
+
+  .tab-links a:hover {
+    text-decoration: none;
+    color: #344563;
+    background-color: #e5e5e5;
+    transform: scale(1.04);
+  }
+
+  .modal-links {
+    display: flex;
+    margin-top: 6px;
+    padding-left: 30px;
   }
 
   .nav-link:hover {
@@ -727,6 +723,7 @@ textarea::placeholder {
     align-self: flex-start;
     position: relative;
     left: 16%;
+    padding-left: 25px;
   }
 
   .break {
