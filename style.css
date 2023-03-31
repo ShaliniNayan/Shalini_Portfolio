@@ -268,6 +268,21 @@ body {
   padding: 4px 12px;
 }
 
+#popup {
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  border-radius: 8px;
+  background-color: inherit;
+  padding: 12px;
+  gap: 10px;
+  line-height: 24px;
+  color: #396df2;
+  border: 1px solid #6070ff;
+  text-decoration: none;
+}
+
 .about {
   background-color: #fff;
   border-top-right-radius: 50px;
@@ -356,6 +371,21 @@ body {
   padding-left: 8px;
 }
 
+.skills li:hover {
+  cursor: pointer;
+  border: solid #6070ff;
+}
+
+#popup:hover {
+  cursor: pointer;
+  color: #fff;
+  background-color: #6070ff;
+}
+
+#popup:active {
+  box-shadow: 2px 2px 5px #6070ff;
+}
+
 .contact-page-container {
   display: flex;
   flex-direction: column;
@@ -432,7 +462,7 @@ textarea::placeholder {
   padding: 16px;
 }
 
-.btn {
+.touchbtn {
   background: #fff;
   border-radius: 8px;
   width: 142px;
@@ -448,8 +478,12 @@ textarea::placeholder {
   font-size: 17px;
 }
 
-.btn:active {
+.button:active {
   background-color: #2230d2;
+}
+
+.btn:hover {
+  color: #6070ff;
 }
 
 .shape {
@@ -507,7 +541,7 @@ textarea::placeholder {
   margin-left: -40px;
 }
 
-.close-btn:target {
+.close-button:target {
   visibility: visible;
 }
 
@@ -561,8 +595,29 @@ textarea::placeholder {
     border-radius: 0 0 0 70px;
   }
 
+  popup:hover {
+    cursor: pointer;
+    color: #fff;
+    background-color: #6070ff;
+  }
+
+  .popup:active {
+    box-shadow: 2px 2px 5px #6070ff;
+  }
+
   .mobile-container {
     display: none;
+  }
+
+  .mobile-popup-window .close-btn {
+    position: absolute;
+    color: #67798e;
+    margin-top: 32px;
+    margin-right: 15px;
+    display: flex;
+    align-self: flex-end;
+    align-content: flex-end;
+    font-size: 30px;
   }
 
   .desktop-container {
@@ -608,6 +663,13 @@ textarea::placeholder {
     text-decoration: none;
   }
 
+  .tab-links:hover a {
+    text-decoration: none;
+    color: #344563;
+    background-color: #e5e5e5;
+    transform: scale(1.04);
+  }
+
   .modal-links {
     display: flex;
     margin-top: 6px;
@@ -626,6 +688,12 @@ textarea::placeholder {
     padding: 10px 23px;
     align-items: center;
     margin-right: 0%;
+  }
+
+  .nav-link:hover {
+    color: #344563;
+    background-color: #e5e5e5;
+    transform: scale(1.04);
   }
 
   .headline {
@@ -775,6 +843,11 @@ textarea::placeholder {
     height: 120px;
   }
 
+  .lang-icons {
+    display: flex;
+    flex-direction: column;
+  }
+
   .contact-page-container {
     background-image: url("images/contact\ form\ background\ shapes@2x.png");
     width: 100%;
@@ -855,6 +928,13 @@ textarea::placeholder {
     width: 96%;
   }
 
+  .paragraph-description {
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "Poppins", sans-serif;
+    color: #344563;
+  }
+
   .desktopModal .cards-details {
     color: #091e42;
   }
@@ -909,7 +989,7 @@ textarea::placeholder {
     margin-right: 14px;
   }
 
-  .close-btn {
+  .close-button {
     color: #67798e;
     background: #fff;
     border: none;
@@ -921,7 +1001,7 @@ textarea::placeholder {
     align-self: center;
   }
 
-  .close-btn:target {
+  .close-button:target {
     visibility: visible;
     opacity: 0;
   }
