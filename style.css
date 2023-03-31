@@ -189,6 +189,8 @@ body {
 
 .tonic-area {
   width: 100%;
+  margin-bottom: 0;
+  padding-bottom: 0;
 }
 
 .card-details {
@@ -198,6 +200,8 @@ body {
   font-weight: 700;
   font-size: 32px;
   line-height: 44px;
+  margin-bottom: 0;
+  padding-bottom: 0;
 }
 
 .projects-section-desktop {
@@ -218,6 +222,7 @@ body {
   font-style: normal;
   line-height: 16px;
   color: #344563;
+  margin-top: 0;
 }
 
 .countertext {
@@ -759,16 +764,18 @@ textarea::placeholder {
   .projects-section-desktop .tonic-area {
     color: #344563;
     font-size: 2vw;
-    margin: 2%;
+    margin-top: 5%;
     width: 46%;
   }
 
   .projects-section-desktop .cards-details {
     color: #091e42;
+    margin: 0;
   }
 
   .projects-section-desktop .highlight-text {
-    margin: 10px 10px 10px 0;
+    margin: 10px 10px 25px 0;
+    padding: 10px 10px 25px 0;
   }
 
   .projects-section-desktop .countertext {
@@ -787,12 +794,12 @@ textarea::placeholder {
     margin: 20px 10px 30px 0;
   }
 
-  .project2 {
+  #project2 {
     flex-direction: row-reverse !important;
   }
 
   #project4 {
-    flex-direction: row-reverse;
+    flex-direction: row-reverse !important;
   }
 
   .about {
@@ -930,6 +937,8 @@ textarea::placeholder {
     font-weight: 400;
     font-family: "Poppins", sans-serif;
     color: #344563;
+    margin-top: 20px;
+    padding-top: 20px;
   }
 
   .desktopModal .cards-details {
