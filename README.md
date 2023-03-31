@@ -1,5 +1,5 @@
 # Shalini_Portfolio
-# Portfolio: setup and mobile first
+# Portfolio: setup and mobile first & desktop version
 
 
 REQUIRED SECTIONS:
@@ -52,10 +52,10 @@ OPTIONAL SECTIONS:
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [Shalini_Portfolio] <a name="Portfolio: setup and mobile first"></a>
+# 📖 [Shalini_Portfolio] <a name="Portfolio: setup and mobile first & desktop version"></a>
 
 
-**[Shalini_Portfolio]** This is my second project Portfolio: setup and mobile first.
+**[Shalini_Portfolio]** This is my forth project Portfolio: Portfolio: setup and mobile first & desktop version
 
 ## 🛠 Built With <a name="built-with"></a>
 
