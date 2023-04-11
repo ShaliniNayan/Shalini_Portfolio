@@ -2,26 +2,7 @@
 
 # Portfolio: setup and mobile first & desktop version
 
-REQUIRED SECTIONS:
-
-- Table of Contents
-- About the Project
-  - Built With
-  - Live Demo
-- Getting Started
-- Authors
-- Future Features
-- Contributing
-- Show your support
-- Acknowledgements
-- License
-
-OPTIONAL SECTIONS:
-
-- FAQ
-
 <div align="center">
-
 
 </div>
 
@@ -29,25 +10,28 @@ OPTIONAL SECTIONS:
 
 # 📗 Table of Contents
 
-- [📖 About the Project](#about-project)
-  - [🛠 Built With](#built-with)
-    - [Tech Stack](#tech-stack)
-    - [Key Features](#key-features)
-  - [🚀 Live Demo](#live-demo)
-- [💻 Getting Started](#getting-started)
-  - [Setup](#setup)
-  - [Prerequisites](#prerequisites)
-  - [Install](#install)
-  - [Usage](#usage)
-  - [Run tests](#run-tests)
-  - [Deployment](#triangular_flag_on_post-deployment)
-- [👥 Authors](#authors)
-- [🔭 Future Features](#future-features)
-- [🤝 Contributing](#contributing)
-- [⭐️ Show your support](#support)
-- [🙏 Acknowledgements](#acknowledgements)
-- [❓ FAQ (OPTIONAL)](#faq)
-- [📝 License](#license)
+- [Shalini\_Portfolio](#shalini_portfolio)
+- [Portfolio: setup and mobile first \& desktop version](#portfolio-setup-and-mobile-first--desktop-version)
+- [📗 Table of Contents](#-table-of-contents)
+- [📖 \[Shalini\_Portfolio\] ](#-shalini_portfolio-)
+  - [🛠 Built With ](#-built-with-)
+    - [Tech Stack ](#tech-stack-)
+    - [Key Features ](#key-features-)
+- [📖 My Portfolio ](#-my-portfolio-)
+  - [🛠 Built With ](#-built-with--1)
+    - [Tech Stack ](#tech-stack--1)
+    - [Key Features ](#key-features--1)
+  - [🚀 Live Demo ](#-live-demo-)
+  - [💻 Getting Started ](#-getting-started-)
+    - [Prerequisites](#prerequisites)
+    - [Setup](#setup)
+    - [Usage](#usage)
+    - [Run tests](#run-tests)
+  - [👥 Authors ](#-authors-)
+  - [🤝 Contributing ](#-contributing-)
+  - [⭐️ Show your support ](#️-show-your-support-)
+  - [🙏 Acknowledgments ](#-acknowledgments-)
+  - [📝 License ](#-license-)
 
 <!-- PROJECT DESCRIPTION -->
 
@@ -62,14 +46,9 @@ OPTIONAL SECTIONS:
 <details>
   <summary>Client</summary>
   <ul>
-    <li><a href="https://html.org/">index.html</a></li>
-  </ul>
-</details>
-
-<details>
-  <summary>Server</summary>
-  <ul>
-    <li><a href="https://css.com/">style.css</a></li>
+    <li><a href="https://html.org/">HTML</a></li>
+    <li><a href="https://html.org/">CSS</a></li>
+    <li><a href="https://html.org/">JASCRIPT</a></li>
   </ul>
 </details>
 
@@ -83,13 +62,35 @@ OPTIONAL SECTIONS:
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- LIVE DEMO -->
+<!-- GETTING STARTED -->
 
-<!--## 🚀 Live Demo <a name="live-demo"></a>-->
+# 📖 My Portfolio <a name="about-project"></a>
+
+**My Portfolio** is a a website that shows my achievements, my skills, my contact details and all the informations needed by a recruiter or a collaborator
+
+## 🛠 Built With <a name="built-with"></a>
+
+### Tech Stack <a name="tech-stack"></a>
+
+- HTML
+- CSS
+- Javascript
+
+### Key Features <a name="key-features"></a>
+
+- [ ] **Navigation Bar**
+- [ ] **Header**
+- [ ] **My projects**
+- [ ] **About Me**
+- [ ] **Download My Resume**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- GETTING STARTED -->
+## 🚀 Live Demo <a name="live-demo"></a>
+
+- [Live Demo Link](https://ShaliniNayan.github.io/Shalini_Portfolio/)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
@@ -99,54 +100,37 @@ To get a local copy up and running, follow these steps.
 
 In order to run this project you need:
 
-<!--
-Example command:
-
-```sh
- Install by VS Code
-```
- -->
+- a browser
+- git
+- nodejs
 
 ### Setup
 
 Clone this repository to your desired folder:
 
-<!--
-Example commands:
-
 ```sh
   cd my-folder
-  git clone git@github.com:ShaliniNayan/Shalini_Portfolio.git
+  git clone https://github.com/ShaliniNayan/Shalini_Portfolio.git
+  npm install
 ```
---->
-
-### Install
-
-Install this project with:
 
 ### Usage
 
 To run the project, execute the following command:
 
-<!--
-Example command:
+```sh
+  Open index.html in browser
+  or
+  open with Live server in Vscode
+```
+
+### Run tests
+
+To run tests, run the following command:
 
 ```sh
-  live server
+  npx stylelint "**/*.{css,scss}"
 ```
---->
-
-### Deployment
-
-You can deploy this project using:
-
-<!--
-Example:
-
-```sh
-github pages
-```
- -->
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -154,11 +138,17 @@ github pages
 
 ## 👥 Authors <a name="authors"></a>
 
-👤 **Author1**
+👤 **Shalini Nayan**
 
 - GitHub: [@ShaliniNayan](https://github.com/ShaliniNayan)
 - Twitter: [@sndprs](https://twitter.com/sndprs)
 - LinkedIn: [shalini-nayan-5820389](https://linkedin.com/in/shalini-nayan-5820389)
+
+👤 **Mahamadou Nouridine**
+
+- GitHub: [mahamadou-nouridine](https://github.com/mahamadou-nouridine)
+- Linkedin: [mahamadou-nouridine-mamoudou-souley-2b424a1a5](https://www.linkedin.com/in/mahamadou-nouridine-mamoudou-souley-2b424a1a5)
+- Twitter: [Nouridine_Dino](https://twitter.com/Nouridine_Dino)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
