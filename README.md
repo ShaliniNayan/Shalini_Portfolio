@@ -85,7 +85,7 @@ OPTIONAL SECTIONS:
 
 LIVE DEMO -->
 
-## 🚀[ Live Demo ](https://ShaliniNayan.github.io/Shalini_Portfolio/)
+## 🚀[ Live Demo ](https://shalininayan.github.io/Shalini_Portfolio/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

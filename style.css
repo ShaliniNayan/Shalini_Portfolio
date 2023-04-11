@@ -255,7 +255,6 @@ body {
 }
 
 .skills {
-  display: float;
   display: flex;
   font-family: "Poppins", Arial, Helvetica, sans-serif;
   font-style: normal;
@@ -376,6 +375,15 @@ body {
   gap: 16px;
   list-style-type: none;
   padding-left: 8px;
+}
+
+.nav-links-mobile-menu li {
+  font-family: Poppins, sans-serif, serif;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 44px;
+  letter-spacing: 0;
+  text-align: left;
 }
 
 .skills li:hover {
@@ -606,21 +614,13 @@ textarea::placeholder {
   transform: translateX(100%);
   transition: all ease-in-out 1s;
   overflow-y: scroll;
+
   /* display: none; */
 }
 
 .open-side-menu {
   transform: translateX(0);
   transition: all ease-in-out 1s;
-}
-
-.nav-links-mobile-menu li {
-  font-family: Poppins, sans-serif, serif;
-  font-size: 32px;
-  font-weight: 600;
-  line-height: 44px;
-  letter-spacing: 0;
-  text-align: left;
 }
 
 .nav-links-mobile-menu {
@@ -637,13 +637,13 @@ textarea::placeholder {
   font-size: 20px;
 }
 
-#cross{
+#cross {
   cursor: pointer;
 }
 
 .menu-link,
 .cross {
-  color: #ffffff;
+  color: #fff;
 }
 
 /* side menu  */
@@ -800,7 +800,6 @@ textarea::placeholder {
   .projects-section-desktop {
     display: grid;
     grid-template-rows: repeat(4, 1fr);
-    grid-template-columns: repeat(1fr);
     place-items: center;
     margin-top: 100px;
     gap: 50px;
@@ -918,7 +917,6 @@ textarea::placeholder {
 
   .contact-description {
     width: 40%;
-    position: bottom;
     font-family: "Poppins", sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -943,7 +941,6 @@ textarea::placeholder {
   .desktopModal {
     display: grid;
     grid-template-rows: repeat(4, 1fr);
-    grid-template-columns: repeat(1fr);
     place-items: center;
     margin: 0;
     position: absolute;
@@ -951,7 +948,6 @@ textarea::placeholder {
     bottom: 0;
     background: #c1c7d0;
     height: 1000px;
-    transform: matrix(0.5);
     visibility: hidden;
   }
 
