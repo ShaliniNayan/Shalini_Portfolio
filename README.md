@@ -37,12 +37,16 @@ OPTIONAL SECTIONS:
     - [Tech Stack ](#tech-stack-)
     - [Key Features ](#key-features-)
   - [🚀 Live Demo ](#-live-demo-)
+- [📖 My Portfolio ](#-my-portfolio-)
+  - [🛠 Built With ](#-built-with--1)
+    - [Tech Stack ](#tech-stack--1)
+    - [Key Features ](#key-features--1)
+  - [🚀 Live Demo ](#-live-demo--1)
   - [💻 Getting Started ](#-getting-started-)
     - [Prerequisites](#prerequisites)
     - [Setup](#setup)
-    - [Install](#install)
     - [Usage](#usage)
-    - [Deployment](#deployment)
+    - [Run tests](#run-tests)
   - [👥 Authors ](#-authors-)
   - [🤝 Contributing ](#-contributing-)
   - [⭐️ Show your support ](#️-show-your-support-)
@@ -91,6 +95,36 @@ LIVE DEMO -->
 
 <!-- GETTING STARTED -->
 
+# 📖 My Portfolio <a name="about-project"></a>
+
+**My Portfolio** is a a website that shows my achievements, my skills, my contact details and all the informations needed by a recruiter or a collaborator
+
+## 🛠 Built With <a name="built-with"></a>
+
+### Tech Stack <a name="tech-stack"></a>
+
+- HTML
+- CSS
+- Javascript
+
+### Key Features <a name="key-features"></a>
+
+- [ ] **Navigation Bar**
+- [ ] **Header**
+- [ ] **My projects**
+- [ ] **About Me**
+- [ ] **Download My Resume**
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 🚀 Live Demo <a name="live-demo"></a>
+
+> Add a link to your deployed project.
+
+- [Live Demo Link](https://Mahamadou-Nouridine.github.io/My-Portfolio/)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 ## 💻 Getting Started <a name="getting-started"></a>
 
 To get a local copy up and running, follow these steps.
@@ -99,54 +133,37 @@ To get a local copy up and running, follow these steps.
 
 In order to run this project you need:
 
-<!--
-Example command:
-
-```sh
- Install by VS Code
-```
- -->
+- a browser
+- git
+- nodejs
 
 ### Setup
 
 Clone this repository to your desired folder:
 
-<!--
-Example commands:
-
 ```sh
   cd my-folder
-  git clone git@github.com:ShaliniNayan/Shalini_Portfolio.git
+  git clone https://github.com/mahamadou-nouridine/My-Portfolio.git
+  npm install
 ```
---->
-
-### Install
-
-Install this project with:
 
 ### Usage
 
 To run the project, execute the following command:
 
-<!--
-Example command:
+```sh
+  Open index.html in browser
+  or
+  open with Live server in Vscode
+```
+
+### Run tests
+
+To run tests, run the following command:
 
 ```sh
-  live server
+  npx stylelint "**/*.{css,scss}"
 ```
---->
-
-### Deployment
-
-You can deploy this project using:
-
-<!--
-Example:
-git@github.com:ShaliniNayan/Shalini_Portfolio.git
-```sh
-github pages
-```
- -->
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
