@@ -2,26 +2,7 @@
 
 # Portfolio: setup and mobile first & desktop version
 
-REQUIRED SECTIONS:
-
-- Table of Contents
-- About the Project
-  - Built With
-  - Live Demo
-- Getting Started
-- Authors
-- Future Features
-- Contributing
-- Show your support
-- Acknowledgements
-- License
-
-OPTIONAL SECTIONS:
-
-- FAQ
-
 <div align="center">
-
 
 </div>
 
@@ -36,12 +17,11 @@ OPTIONAL SECTIONS:
   - [🛠 Built With ](#-built-with-)
     - [Tech Stack ](#tech-stack-)
     - [Key Features ](#key-features-)
-  - [🚀 Live Demo ](#-live-demo-)
 - [📖 My Portfolio ](#-my-portfolio-)
   - [🛠 Built With ](#-built-with--1)
     - [Tech Stack ](#tech-stack--1)
     - [Key Features ](#key-features--1)
-  - [🚀 Live Demo ](#-live-demo--1)
+  - [🚀 Live Demo ](#-live-demo-)
   - [💻 Getting Started ](#-getting-started-)
     - [Prerequisites](#prerequisites)
     - [Setup](#setup)
@@ -66,14 +46,9 @@ OPTIONAL SECTIONS:
 <details>
   <summary>Client</summary>
   <ul>
-    <li><a href="https://html.org/">index.html</a></li>
-  </ul>
-</details>
-
-<details>
-  <summary>Server</summary>
-  <ul>
-    <li><a href="https://css.com/">style.css</a></li>
+    <li><a href="https://html.org/">HTML</a></li>
+    <li><a href="https://html.org/">CSS</a></li>
+    <li><a href="https://html.org/">JASCRIPT</a></li>
   </ul>
 </details>
 
@@ -84,12 +59,6 @@ OPTIONAL SECTIONS:
 - **[README Update]**
 - **[Free content from Linters]**
 - **[Scale Project in mobile to desktop Version]**
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-LIVE DEMO -->
-
-## 🚀[ Live Demo ](https://shalininayan.github.io/Shalini_Portfolio/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -119,9 +88,7 @@ LIVE DEMO -->
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-> Add a link to your deployed project.
-
-- [Live Demo Link](https://Mahamadou-Nouridine.github.io/My-Portfolio/)
+- [Live Demo Link](https://ShaliniNayan.github.io/Shalini_Portfolio/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -143,7 +110,7 @@ Clone this repository to your desired folder:
 
 ```sh
   cd my-folder
-  git clone https://github.com/mahamadou-nouridine/My-Portfolio.git
+  git clone https://github.com/ShaliniNayan/Shalini_Portfolio.git
   npm install
 ```
 
@@ -171,11 +138,17 @@ To run tests, run the following command:
 
 ## 👥 Authors <a name="authors"></a>
 
-👤 **Author1**
+👤 **Shalini Nayan**
 
 - GitHub: [@ShaliniNayan](https://github.com/ShaliniNayan)
 - Twitter: [@sndprs](https://twitter.com/sndprs)
 - LinkedIn: [shalini-nayan-5820389](https://linkedin.com/in/shalini-nayan-5820389)
+
+👤 **Mahamadou Nouridine**
+
+- GitHub: [mahamadou-nouridine](https://github.com/mahamadou-nouridine)
+- Linkedin: [mahamadou-nouridine-mamoudou-souley-2b424a1a5](https://www.linkedin.com/in/mahamadou-nouridine-mamoudou-souley-2b424a1a5)
+- Twitter: [Nouridine_Dino](https://twitter.com/Nouridine_Dino)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
