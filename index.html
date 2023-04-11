@@ -10,14 +10,15 @@
     integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="./style.css" />
+  <script src="script.js" defer></script>
 </head>
 
 <body>
   <header class="landing-page">
 
-    <div class="side-menu">
+    <div class="side-menu" id="side-menu">
       <div class="cross">
-        <i class="fa-sharp fa-solid fa-xmark"></i>
+        <i class="fa-sharp fa-solid fa-xmark" id="cross"></i>
       </div>
       <ul class="nav-links-mobile-menu">
         <li>
@@ -37,7 +38,7 @@
         <h2 class="logo">My Logo</h2>
       </div>
 
-      <div class="hamburger">
+      <div class="hamburger" id="hamburger">
         <span class="bar"></span>
         <span class="bar"></span>
         <span class="bar"></span>

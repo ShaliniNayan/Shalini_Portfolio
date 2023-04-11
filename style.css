@@ -602,7 +602,14 @@ textarea::placeholder {
   mix-blend-mode: multiply;
   z-index: 100;
   backdrop-filter: blur(5px);
+  transform: translateX(100%);
+  transition: all ease-in-out 1s;
   /* display: none; */
+}
+
+.open-side-menu {
+  transform: translateX(0);
+  transition: all ease-in-out 1s;
 }
 
 .nav-links-mobile-menu li {
@@ -628,8 +635,9 @@ textarea::placeholder {
   font-size: 20px;
 }
 
-.menu-link, .cross {
-  color: #FFFFFF;
+.menu-link,
+.cross {
+  color: #ffffff;
 }
 
 /* side menu  */
