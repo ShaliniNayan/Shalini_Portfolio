@@ -60,6 +60,7 @@ body {
 .hamburger {
   z-index: 2;
   margin-right: 15px;
+  cursor: pointer;
 }
 
 .bar {
@@ -604,6 +605,7 @@ textarea::placeholder {
   backdrop-filter: blur(5px);
   transform: translateX(100%);
   transition: all ease-in-out 1s;
+  overflow-y: scroll;
   /* display: none; */
 }
 
@@ -633,6 +635,10 @@ textarea::placeholder {
   text-align: end;
   margin: 20px 20px 0 0;
   font-size: 20px;
+}
+
+#cross{
+  cursor: pointer;
 }
 
 .menu-link,
