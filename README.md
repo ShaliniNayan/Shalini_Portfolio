@@ -142,7 +142,7 @@ You can deploy this project using:
 
 <!--
 Example:
-
+git@github.com:ShaliniNayan/Shalini_Portfolio.git
 ```sh
 github pages
 ```
