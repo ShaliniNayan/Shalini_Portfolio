@@ -1,5 +1,5 @@
 // Mobile Version//
-const mobileProjects = [
+export const mobileProjects = [
   {
     //card 1 details
     id: "1",
@@ -12,7 +12,7 @@ const mobileProjects = [
       "A daily selection of privately personalized; no accounts or sign-ups required.",
     company2: "CONOPY",
     no: "detail1",
-    cardImage1: "./images.Mobpics1.png",
+    cardImage1: "./images/Mobpics1.png",
     counterText: "Back End Dev",
     year: "2015",
     technologies: ["HTML", "CSS", "JavaScript"],
@@ -29,7 +29,7 @@ const mobileProjects = [
       "A daily selection of privately personalized; no accounts or sign-ups required.",
     company2: "CONOPY",
     no: "detail1",
-    cardImage1: "./images.Mobpics2.png",
+    cardImage1: "./images/Mobpics2.png",
     counterText: "Back End Dev",
     year: "2015",
     technologies: ["HTML", "CSS", "JavaScript"],
@@ -46,7 +46,7 @@ const mobileProjects = [
       "A daily selection of privately personalized; no accounts or sign-ups required.",
     company2: "CONOPY",
     no: "detail1",
-    cardImage1: "./images.Mobpics3.png",
+    cardImage1: "./images/Mobpics3.png",
     counterText: "Back End Dev",
     year: "2015",
     technologies: ["HTML", "CSS", "JavaScript"],
@@ -63,7 +63,7 @@ const mobileProjects = [
       "A daily selection of privately personalized; no accounts or sign-ups required.",
     company2: "CONOPY",
     no: "detail1",
-    cardImage1: "./images.Mobpics4.png",
+    cardImage1: "./images/Mobpics4.png",
     counterText: "Back End Dev",
     year: "2015",
     technologies: ["HTML", "CSS", "JavaScript"],
@@ -71,7 +71,7 @@ const mobileProjects = [
 ];
 
 // Desktop Version//
-const desktopProjects = [
+export const desktopProjects = [
   {
     //card 1 details
     id: "1",
