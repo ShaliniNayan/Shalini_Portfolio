@@ -1,33 +1,35 @@
-const hamburger = document.querySelector('#hamburger');
-const sideMenu = document.querySelector('#side-menu');
-const cross = document.querySelector('#cross');
-const body = document.querySelector('body');
-const menuLinks = document.querySelectorAll('.menu-link');
-const projectContainer =  document.querySelector('#portfolio')
-import {desktopProjects, mobileProjects} from './data.js'
+const hamburger = document.querySelector("#hamburger");
+const sideMenu = document.querySelector("#side-menu");
+const cross = document.querySelector("#cross");
+const body = document.querySelector("body");
+const menuLinks = document.querySelectorAll(".menu-link");
+const projectContainer = document.querySelector("#portfolio");
+import { desktopProjects, mobileProjects } from "./data.js";
+const desktopContainer = document.querySelector("#desktop-portfolio");
 
 const openSideMenu = () => {
-  sideMenu.classList.add('open-side-menu');
-  body.style.overflow = 'hidden';
+  sideMenu.classList.add("open-side-menu");
+  body.style.overflow = "hidden";
 };
 
 const closeSideMenu = () => {
-  sideMenu.classList.remove('open-side-menu');
-  body.style.overflow = 'unset';
+  sideMenu.classList.remove("open-side-menu");
+  body.style.overflow = "unset";
 };
 
-hamburger.addEventListener('click', openSideMenu);
-cross.addEventListener('click', closeSideMenu);
+hamburger.addEventListener("click", openSideMenu);
+cross.addEventListener("click", closeSideMenu);
 
 for (let i = 0; i < menuLinks.length; i += 1) {
-  menuLinks[i].addEventListener('click', closeSideMenu);
+  menuLinks[i].addEventListener("click", closeSideMenu);
 }
 
-// popup 
-for(let data of mobileProjects) {
+// popup
+//Mobile Version//
+for (let data of mobileProjects) {
   console.log(data);
-  const card = document.createElement('div')
-  card.classList.add("card")
+  const card = document.createElement("div");
+  card.classList.add("card");
 
   card.innerHTML = `
   <img class="card-image" src=${data.cardImage1} alt="mobileVersion" />
@@ -52,9 +54,43 @@ for(let data of mobileProjects) {
     </ul>
     <button id="popup" type="button">See Project</button>
   </div>
-  `
+  `;
 
   projectContainer.appendChild(card);
 }
 
-// popup 
+//Desktop Version//
+
+for (let data of desktopProjects) {
+  console.log(data);
+  const card = document.createElement("div");
+  card.classList.add("card");
+
+  card.innerHTML = `
+  <img class="card-image" src=${data.cardImage1} alt="desktopVersion" />
+  <div class="tonic-area">
+    <h2 class="cards-details">${data.cardTitle}</h2>
+    <div class="highlights">
+      <span class="highlight-text">${data.company}</span>
+      <img src="images/Counter.png" alt="Counter" />
+      <span class="countertext">${data.counterText}</span>
+      <img src="images/Counter.png" alt="Counter" />
+      <span class="year">${data.year}</span>
+    </div>
+    <article class="cards-description">
+      <p class="paragraph-description">
+      ${data.description}
+      </p>
+    </article>
+    <ul class="skills">
+      <li id="html">html</li>
+      <li id="css">css</li>
+      <li id="javascript">javascript</li>
+    </ul>
+    <button id="popup" type="button">See Project</button>
+  </div>
+  `;
+
+  desktopContainer.appendChild(card);
+}
+// popup
