@@ -19,20 +19,20 @@ const modal = document.querySelector(".modal");
 const modalContainer = document.querySelector(".modal-container");
 
 const openSideMenu = () => {
-  sideMenu.classList.add("open-side-menu");
-  body.style.overflow = "hidden";
+  sideMenu.classList.add('open-side-menu');
+  body.style.overflow = 'hidden';
 };
 
 const closeSideMenu = () => {
-  sideMenu.classList.remove("open-side-menu");
-  body.style.overflow = "unset";
+  sideMenu.classList.remove('open-side-menu');
+  body.style.overflow = 'unset';
 };
 
-hamburger.addEventListener("click", openSideMenu);
-cross.addEventListener("click", closeSideMenu);
+hamburger.addEventListener('click', openSideMenu);
+cross.addEventListener('click', closeSideMenu);
 
 for (let i = 0; i < menuLinks.length; i += 1) {
-  menuLinks[i].addEventListener("click", closeSideMenu);
+  menuLinks[i].addEventListener('click', closeSideMenu);
 }
 
 // popup
@@ -73,13 +73,13 @@ for (let i = 0; i < desktopProjects.length; i += 1) {
   projectContainer.appendChild(card);
 }
 
-//Desktop Version//
+// Desktop Version//
 for (let i = 0; i < desktopProjects.length; i += 1) {
   const data = desktopProjects[i];
   const index = desktopProjects.indexOf(data);
 
-  const card = document.createElement("div");
-  card.classList.add("card");
+  const card = document.createElement('div');
+  card.classList.add('card');
 
   let tags = ''
   for(let j = 0; j < desktopProjects[i].technologies.length; j += 1){
@@ -111,7 +111,7 @@ for (let i = 0; i < desktopProjects.length; i += 1) {
     <button class='desktop-card-button${i}' id="popup" type="button">See Project</button>
   </div>
   `
-      : `
+    : `
   <div class="tonic-area">
     <h2 class="cards-details">${data.cardTitle}</h2>
     <div class="highlights">
@@ -150,11 +150,11 @@ const changePopupData = (data) => {
   );
   // modalIMage.classList.add('modal-image')
   modalDescription.textContent = usingData.description;
-  modalSeeLive.href = "https://www.google.com";
-  modalSeeSource.href = "https://www.github.com";
-  const technologies = usingData.technologies;
-  let tags = "";
-  for (let index = 0; index < technologies.length; index++) {
+  modalSeeLive.href = 'https://www.google.com';
+  modalSeeSource.href = 'https://www.github.com';
+  const { technologies } = usingData;
+  let tags = '';
+  for (let index = 0; index < technologies.length; index += 1) {
     const element = technologies[index];
     tags += ` <li >${element}</li>`;
   }
@@ -171,7 +171,7 @@ const openModal = (data) => {
   scrollX = window.scrollX;
   scrollY = window.scrollY;
   changePopupData(data);
-  modalContainer.classList.add("open-modal-container");
+  modalContainer.classList.add('open-modal-container');
 
   setTimeout(() => {
     modal.classList.add("open-modal");
@@ -182,7 +182,7 @@ const openModal = (data) => {
 
 // close modal function
 const closeModal = () => {
-  modal.classList.remove("open-modal");
+  modal.classList.remove('open-modal');
   setTimeout(() => {
     modalContainer.classList.remove("open-modal-container");
     body.style.overflow = "unset";
@@ -191,16 +191,15 @@ const closeModal = () => {
 };
 
 // bind the closing function
-document.querySelector(".modal-cross").addEventListener("click", closeModal);
+document.querySelector('.modal-cross').addEventListener('click', closeModal);
 
 // bind open popup function
 // desktop
-for (let index = 0; index < desktopProjects.length; index++) {
+for (let index = 0; index < desktopProjects.length; index += 1) {
   document
     .querySelector(`.desktop-card-button${index}`)
-    .addEventListener("click", () => {
+    .addEventListener('click', () => {
       openModal(desktopProjects[index]);
-      console.log("modal openned");
     });
 }
 
