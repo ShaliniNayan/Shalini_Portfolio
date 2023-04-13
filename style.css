@@ -274,7 +274,8 @@ body {
   padding: 4px 12px;
 }
 
-#popup, .popup {
+#popup,
+.popup {
   font-family: "Poppins", Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -391,13 +392,15 @@ body {
   border: solid #6070ff;
 }
 
-#popup:hover, .popup:hover {
+#popup:hover,
+.popup:hover {
   cursor: pointer;
   color: #fff;
   background-color: #6070ff;
 }
 
-#popup:active, .popup:active {
+#popup:active,
+.popup:active {
   box-shadow: 2px 2px 5px #6070ff;
 }
 
@@ -603,25 +606,35 @@ textarea::placeholder {
   position: fixed;
   height: 100vh;
   width: 100vw;
+  background-color: rgb(193, 200, 209, 0.5);
   backdrop-filter: blur(15px);
+  /* mix-blend-mode: multiply; */
   z-index: 100;
   display: none;
   justify-content: center;
   align-items: center;
-  /* display: none; */
 }
 
 .modal {
+  background-color: white;
   width: auto;
-  max-width: 500px;
-  max-height: 700px;
-  background-color: #fff;
-  padding: 0px 20px 20px 20px;
-  margin: 20px;
+  max-width: 1048px;
+  max-height: 1055px;
   border-radius: 16px;
   transform: scale(0);
   transition: all ease-in-out 0.5s;
   position: relative;
+  padding: 0 20px 20px 20px;
+  margin: 20px;
+  z-index: 101;
+}
+
+#modal-description {
+  max-width: 778px;
+}
+
+.right-block {
+  max-width: 306px;
 }
 
 .open-modal {
@@ -639,7 +652,17 @@ textarea::placeholder {
 }
 
 .modal-image {
+  width: 100%;
   max-width: 1000px;
+  height: 80vw;
+  min-height: 220px;
+  /* max-height: 478px; */
+  max-height: 220px;
+  background-image: url("./images/modal-image.png");
+  /* background-color: yello; */
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 
 .modal-title {
@@ -681,10 +704,14 @@ textarea::placeholder {
   cursor: pointer;
 }
 
-
 /* popup  */
 
 @media screen and (min-width: 768px) {
+  .modal-image {
+    max-height: 478px;
+    background-size: 90%;
+  }
+
   /* popup  */
   .modal-description {
     display: flex;

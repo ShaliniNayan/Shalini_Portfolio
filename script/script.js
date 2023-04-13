@@ -4,13 +4,13 @@ const cross = document.querySelector("#cross");
 const body = document.querySelector("body");
 const menuLinks = document.querySelectorAll(".menu-link");
 const projectContainer = document.querySelector("#portfolio");
-import { desktopProjects, mobileProjects } from "./data.js";
+import  desktopProjects from "./data.js";
 const desktopContainer = document.querySelector("#desktop-portfolio");
 const modalTitle = document.querySelector(".modal-title");
 const modalCompany = document.querySelector(".modal-company");
 const modalCounterText = document.querySelector(".modal-countertext");
 const modalYear = document.querySelector(".modal-year");
-const modalIMage = document.querySelector("#modal-image");
+const modalIMage = document.querySelector(".modal-image");
 const modalDescription = document.querySelector("#modal-description");
 const modalSkills = document.querySelector(".modal-skills");
 const modalSeeLive = document.querySelector("#see-live");
@@ -37,10 +37,15 @@ for (let i = 0; i < menuLinks.length; i += 1) {
 
 // popup
 //Mobile Version//
-for (let i = 0; i < mobileProjects.length; i += 1) {
-  const data = mobileProjects[i];
+for (let i = 0; i < desktopProjects.length; i += 1) {
+  const data = desktopProjects[i];
   const card = document.createElement("div");
   card.classList.add("card");
+  let tags = ''
+  for(let j = 0; j < desktopProjects[i].technologies.length; j += 1){
+    const tag = desktopProjects[i].technologies[j]
+    tags += `<li id="html">${tag}</li>`
+  }
 
   card.innerHTML = `
   <img class="card-image" src=${data.cardImage1} alt="mobileVersion" />
@@ -59,9 +64,7 @@ for (let i = 0; i < mobileProjects.length; i += 1) {
       </p>
     </article>
     <ul class="skills">
-      <li id="html">html</li>
-      <li id="css">css</li>
-      <li id="javascript">javascript</li>
+      ${tags}
     </ul>
     <button class='mobile-card-button${i}' id="popup" type="button">See Project</button>
   </div>
@@ -77,6 +80,12 @@ for (let i = 0; i < desktopProjects.length; i += 1) {
 
   const card = document.createElement("div");
   card.classList.add("card");
+
+  let tags = ''
+  for(let j = 0; j < desktopProjects[i].technologies.length; j += 1){
+    const tag = desktopProjects[i].technologies[j]
+    tags += `<li id="html">${tag}</li>`
+  }
 
   card.innerHTML =
     index % 2 === 0
@@ -97,9 +106,7 @@ for (let i = 0; i < desktopProjects.length; i += 1) {
       </p>
     </article>
     <ul class="skills">
-      <li id="html">html</li>
-      <li id="css">css</li>
-      <li id="javascript">javascript</li>
+      ${tags}
     </ul>
     <button class='desktop-card-button${i}' id="popup" type="button">See Project</button>
   </div>
@@ -120,9 +127,7 @@ for (let i = 0; i < desktopProjects.length; i += 1) {
       </p>
     </article>
     <ul class="skills">
-      <li id="html">html</li>
-      <li id="css">css</li>
-      <li id="javascript">javascript</li>
+      ${tags}
     </ul>
     <button class = 'desktop-card-button${i}' id="popup" type="button">See Project</button>
   </div>
@@ -139,7 +144,11 @@ const changePopupData = (data) => {
   modalCompany.textContent = usingData.company;
   modalCounterText.textContent = usingData.counterText;
   modalYear.textContent = usingData.year;
-  modalIMage.src = usingData.cardImage1;
+  modalIMage.style.setProperty(
+    "background-image",
+    `url(${usingData.cardImage1})`
+  );
+  // modalIMage.classList.add('modal-image')
   modalDescription.textContent = usingData.description;
   modalSeeLive.href = "https://www.google.com";
   modalSeeSource.href = "https://www.github.com";
@@ -150,17 +159,24 @@ const changePopupData = (data) => {
     tags += ` <li >${element}</li>`;
   }
 
+  console.log(usingData.cardImage1);
+
   modalSkills.innerHTML = tags;
 };
 
 // open modal function
+let scrollX = 0;
+let scrollY = 0;
 const openModal = (data) => {
+  scrollX = window.scrollX;
+  scrollY = window.scrollY;
   changePopupData(data);
   modalContainer.classList.add("open-modal-container");
 
   setTimeout(() => {
     modal.classList.add("open-modal");
-    body.style.overflow = 'hidden'
+    body.style.overflow = "hidden";
+    window.scrollTo(0, 0);
   }, 500);
 };
 
@@ -169,7 +185,8 @@ const closeModal = () => {
   modal.classList.remove("open-modal");
   setTimeout(() => {
     modalContainer.classList.remove("open-modal-container");
-    body.style.overflow = 'unset'
+    body.style.overflow = "unset";
+    window.scrollTo(scrollX, scrollY)
   }, 500);
 };
 
@@ -188,11 +205,11 @@ for (let index = 0; index < desktopProjects.length; index++) {
 }
 
 // mobile
-for (let index = 0; index < mobileProjects.length; index++) {
+for (let index = 0; index < desktopProjects.length; index++) {
   console.log(`I am the ${index}`);
   document
     .querySelector(`.mobile-card-button${index}`)
     .addEventListener("click", () => {
-      openModal(mobileProjects[index]);
+      openModal(desktopProjects[index]);
     });
 }
