@@ -274,7 +274,8 @@ body {
   padding: 4px 12px;
 }
 
-#popup, .popup {
+#popup,
+.popup {
   font-family: "Poppins", Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -391,13 +392,15 @@ body {
   border: solid #6070ff;
 }
 
-#popup:hover, .popup:hover {
+#popup:hover,
+.popup:hover {
   cursor: pointer;
   color: #fff;
   background-color: #6070ff;
 }
 
-#popup:active, .popup:active {
+#popup:active,
+.popup:active {
   box-shadow: 2px 2px 5px #6070ff;
 }
 
@@ -608,6 +611,7 @@ textarea::placeholder {
   display: none;
   justify-content: center;
   align-items: center;
+
   /* display: none; */
 }
 
@@ -616,7 +620,7 @@ textarea::placeholder {
   max-width: 500px;
   max-height: 700px;
   background-color: #fff;
-  padding: 0px 20px 20px 20px;
+  padding: 0 20px 20px 20px;
   margin: 20px;
   border-radius: 16px;
   transform: scale(0);
@@ -635,6 +639,7 @@ textarea::placeholder {
 
 .modal-image img {
   width: 100%;
+
   /* max-height: 500px; */
 }
 
@@ -643,7 +648,7 @@ textarea::placeholder {
 }
 
 .modal-title {
-  margin-bottom: 0px;
+  margin-bottom: 0;
 }
 
 .modal-highlights {
@@ -664,7 +669,6 @@ textarea::placeholder {
 .modal-buttons button {
   display: flex;
   align-items: center;
-
   font-family: Poppins, sans-serif;
   font-size: 13px;
   font-weight: 500;
