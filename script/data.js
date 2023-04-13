@@ -15,7 +15,7 @@ export const mobileProjects = [
     cardImage1: "./images/Mobpics1.png",
     counterText: "Back End Dev",
     year: "2015",
-    technologies: ["HTML", "CSS", "JavaScript"],
+    technologies: ["HTML", "CSS", "JavaScript", ],
   },
 
   {
@@ -32,7 +32,7 @@ export const mobileProjects = [
     cardImage1: "./images/Mobpics2.png",
     counterText: "Back End Dev",
     year: "2015",
-    technologies: ["HTML", "CSS", "JavaScript"],
+    technologies: ["HTML", "CSS", "JavaScript", ],
   },
 
   {
@@ -49,7 +49,7 @@ export const mobileProjects = [
     cardImage1: "./images/Mobpics3.png",
     counterText: "Back End Dev",
     year: "2015",
-    technologies: ["HTML", "CSS", "JavaScript"],
+    technologies: ["HTML", "CSS", "JavaScript", ],
   },
 
   {
@@ -66,7 +66,7 @@ export const mobileProjects = [
     cardImage1: "./images/Mobpics4.png",
     counterText: "Back End Dev",
     year: "2015",
-    technologies: ["HTML", "CSS", "JavaScript"],
+    technologies: ["HTML", "CSS", "JavaScript", ],
   },
 ];
 
@@ -87,7 +87,7 @@ export const desktopProjects = [
     cardImage1: "./images/desktop1.png",
     counterText: "Back End Dev",
     year: "2015",
-    technologies: ["HTML", "CSS", "JavaScript"],
+    technologies: ["HTML", "CSS", "JavaScript", ],
   },
 
   {
@@ -104,7 +104,7 @@ export const desktopProjects = [
     cardImage1: "./images/desktop2.png",
     counterText: "Full Stack Dev",
     year: "2015",
-    technologies: ["HTML", "CSS", "JavaScript"],
+    technologies: ["HTML", "CSS", "JavaScript", ],
   },
 
   {
@@ -121,7 +121,7 @@ export const desktopProjects = [
     cardImage1: "./images/desktop3.png",
     counterText: "Full Stack Dev",
     year: "2015",
-    technologies: ["HTML", "CSS", "JavaScript"],
+    technologies: ["HTML", "CSS", "JavaScript", ],
   },
 
   {
@@ -138,6 +138,6 @@ export const desktopProjects = [
     cardImage1: "./images/desktop4.png",
     counterText: "Lead Developer",
     year: "2015",
-    technologies: ["HTML", "CSS", "JavaScript"],
+    technologies: ["HTML", "CSS", "JavaScript", ],
   },
 ];

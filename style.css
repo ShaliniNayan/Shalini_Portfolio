@@ -274,7 +274,7 @@ body {
   padding: 4px 12px;
 }
 
-#popup {
+#popup, .popup {
   font-family: "Poppins", Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -391,13 +391,13 @@ body {
   border: solid #6070ff;
 }
 
-#popup:hover {
+#popup:hover, .popup:hover {
   cursor: pointer;
   color: #fff;
   background-color: #6070ff;
 }
 
-#popup:active {
+#popup:active, .popup:active {
   box-shadow: 2px 2px 5px #6070ff;
 }
 
@@ -526,7 +526,6 @@ textarea::placeholder {
   opacity: 1;
 }
 
-
 .title {
   width: 259px;
   height: 36px;
@@ -604,45 +603,88 @@ textarea::placeholder {
   position: fixed;
   height: 100vh;
   width: 100vw;
-  background-color: red;
+  backdrop-filter: blur(15px);
   z-index: 100;
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
-  display: none;
+  /* display: none; */
 }
 
 .modal {
-  width:auto;
-  max-width: 990px;
+  width: auto;
+  max-width: 500px;
   max-height: 700px;
   background-color: #fff;
   padding: 0px 20px 20px 20px;
   margin: 20px;
   border-radius: 16px;
+  transform: scale(0);
+  transition: all ease-in-out 0.5s;
+  position: relative;
+}
+
+.open-modal {
+  transform: scale(1);
+  transition: all ease-in-out 0.5s;
+}
+
+.open-modal-container {
+  display: flex;
 }
 
 .modal-image img {
   width: 100%;
-  max-height: 586px;
+  /* max-height: 500px; */
 }
 
 .modal-image {
   max-width: 1000px;
 }
 
-.modal-title{
-  margin-bottom: 0px
+.modal-title {
+  margin-bottom: 0px;
 }
 
 .modal-highlights {
   margin-bottom: 20px;
 }
 
+.modal-buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 190px;
+}
+
+.button-icon {
+  height: 18px;
+  width: 18px;
+}
+
+.modal-buttons button {
+  display: flex;
+  align-items: center;
+
+  font-family: Poppins, sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0;
+  text-align: center;
+  padding: 2px;
+}
+
+.modal-cross {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  cursor: pointer;
+}
+
+
 /* popup  */
 
 @media screen and (min-width: 768px) {
-
   /* popup  */
   .modal-description {
     display: flex;

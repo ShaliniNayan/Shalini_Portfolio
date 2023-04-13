@@ -18,32 +18,47 @@
   <!-- popup  -->
   <div class="modal-container">
     <div class="modal">
+      <div class="modal-cross">
+        <i class="fa-sharp fa-solid fa-xmark" id="modal-cross"></i>
+      </div>
       <div class="tonic-area">
-        <h2 class="cards-details  modal-title">TONIC</h2>
+        <h2 class="cards-details  modal-title"></h2>
         <div class="highlights modal-highlights">
-          <span class="highlight-text">CANOPY</span>
+          <span class="highlight-text modal-company"></span>
           <img src="images/Counter.png" alt="Counter.png" />
-          <span class="countertext">Back End Dev</span>
+          <span class="countertext modal-countertext"></span>
           <img src="images/Counter.png" alt="Counter.png" />
-          <span class="year">2015</span>
+          <span class="year modal-year"></span>
         </div>
 
         <div class="modal-image">
-          <img src="./images/modal-image.png" alt="">
+          <img id="modal-image" src="" alt="">
         </div>
 
         <div class="modal-description">
-          <p>
-            A daily selection of privately personalized reads; no accounts or
-            sign-ups required.
+          <p id="modal-description">
           </p>
           <div>
-            <ul class="skills">
-              <li id="html">html</li>
-              <li id="css">css</li>
-              <li id="javascript">javascript</li>
+            <ul class="skills modal-skills">
             </ul>
-            <button id="popup" type="button">See Project</button>
+            <div class="modal-buttons">
+              <button class="popup" type="button">
+                <span>
+                  <a id="see-live" href="" target="_blank" rel="noopener noreferrer">See live</a>
+                </span>
+                <span>
+                  <img class="button-icon" src='./images/externalLink.svg' />
+                </span>
+              </button>
+              <button class="popup" type="button">
+                <span>
+                  <a id="see-source" href="" target="_blank" rel="noopener noreferrer">See source</a>
+                </span>
+                <span>
+                  <img class="button-icon" src='./images/seeSource.svg' />
+                </span>
+              </button>
+            </div>
           </div>
         </div>
       </div>
@@ -169,7 +184,7 @@
           <li id="css">css</li>
           <li id="javascript">javascript</li>
         </ul>
-        <button id="popup" type="button">See Project</button>
+        <button type="button">See Project</button>
       </div>
     </div>
     <div class="card">
@@ -194,7 +209,7 @@
           <li>css</li>
           <li>javascript</li>
         </ul>
-        <button id="popup" type="button">See Project</button>
+        <button type="button">See Project</button>
       </div>
     </div>
     <div class="card">
@@ -219,7 +234,7 @@
           <li>css</li>
           <li>javascript</li>
         </ul>
-        <button id="popup" type="button">See Project</button>
+        <button type="button">See Project</button>
       </div>
     </div>
     <div class="card">
@@ -244,7 +259,7 @@
           <li>css</li>
           <li>javascript</li>
         </ul>
-        <button id="popup" type="button">See Project</button>
+        <button type="button">See Project</button>
       </div>
     </div> -->
   </section>
@@ -272,7 +287,7 @@
           <li id="css">css</li>
           <li id="javascript">javascript</li>
         </ul>
-        <button id="popup" type="button">See Project</button>
+        <button type="button">See Project</button>
       </div>
     </div>
     <div class="card" id="project2">
@@ -298,7 +313,7 @@
           <li>css</li>
           <li>javascript</li>
         </ul>
-        <button id="popup" type="button">See Project</button>
+        <button type="button">See Project</button>
       </div>
     </div>
     <div class="card">
@@ -323,7 +338,7 @@
           <li>css</li>
           <li>javascript</li>
         </ul>
-        <button id="popup" type="button">See Project</button>
+        <button type="button">See Project</button>
       </div>
     </div>
     <div class="card" id="project4">
@@ -348,7 +363,7 @@
           <li>css</li>
           <li>javascript</li>
         </ul>
-        <button id="popup" type="button">See Project</button>
+        <button type="button">See Project</button>
       </div>
     </div> -->
   </section>
@@ -386,7 +401,7 @@
               <a href="#"><img src="images/angellist.png" alt="Angellist" /></a>
             </li>
           </ul>
-          <button id="popup" type="button">Get my resume</button>
+          <button type="button">Get my resume</button>
         </div>
 
       </div>
