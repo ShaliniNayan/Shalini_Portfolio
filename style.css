@@ -605,6 +605,7 @@ textarea::placeholder {
   height: 100vh;
   width: 100vw;
   backdrop-filter: blur(15px);
+  background-color: rgb(193, 199, 208, 0.65);
   z-index: 100;
   display: none;
   justify-content: center;

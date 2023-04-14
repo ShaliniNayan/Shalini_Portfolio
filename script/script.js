@@ -160,13 +160,18 @@ const changePopupData = (data) => {
 };
 
 // open modal function
+let scrollX = 0;
+let scrollY = 0;
 const openModal = (data) => {
+  scrollX = window.scrollX;
+  scrollY = window.scrollY;
   changePopupData(data);
   modalContainer.classList.add('open-modal-container');
 
   setTimeout(() => {
     modal.classList.add('open-modal');
     body.style.overflow = 'hidden';
+    window.scrollTo(0, 0);
   }, 500);
 };
 
@@ -176,6 +181,7 @@ const closeModal = () => {
   setTimeout(() => {
     modalContainer.classList.remove('open-modal-container');
     body.style.overflow = 'unset';
+    window.scrollTo(scrollX, scrollY);
   }, 500);
 };
 
