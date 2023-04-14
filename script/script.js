@@ -11,7 +11,7 @@ const modalTitle = document.querySelector('.modal-title');
 const modalCompany = document.querySelector('.modal-company');
 const modalCounterText = document.querySelector('.modal-countertext');
 const modalYear = document.querySelector('.modal-year');
-const modalIMage = document.querySelector('#modal-image');
+const modalIMage = document.querySelector('.modal-image');
 const modalDescription = document.querySelector('#modal-description');
 const modalSkills = document.querySelector('.modal-skills');
 const modalSeeLive = document.querySelector('#see-live');
@@ -43,6 +43,12 @@ for (let i = 0; i < mobileProjects.length; i += 1) {
   const card = document.createElement('div');
   card.classList.add('card');
 
+  let tags = '';
+  for (let index = 0; index < data.technologies.length; index += 1) {
+    const element = data.technologies[index];
+    tags += `<li id="html">${element}</li>`;
+  }
+
   card.innerHTML = `
   <img class="card-image" src=${data.cardImage1} alt="mobileVersion" />
   <div class="tonic-area">
@@ -60,9 +66,7 @@ for (let i = 0; i < mobileProjects.length; i += 1) {
       </p>
     </article>
     <ul class="skills">
-      <li id="html">html</li>
-      <li id="css">css</li>
-      <li id="javascript">javascript</li>
+      ${tags}
     </ul>
     <button class='mobile-card-button${i}' id="popup" type="button">See Project</button>
   </div>
@@ -75,6 +79,12 @@ for (let i = 0; i < mobileProjects.length; i += 1) {
 for (let i = 0; i < desktopProjects.length; i += 1) {
   const data = desktopProjects[i];
   const index = desktopProjects.indexOf(data);
+
+  let tags = '';
+  for (let index = 0; index < data.technologies.length; index += 1) {
+    const element = data.technologies[index];
+    tags += `<li id="html">${element}</li>`;
+  }
 
   const card = document.createElement('div');
   card.classList.add('card');
@@ -97,9 +107,7 @@ for (let i = 0; i < desktopProjects.length; i += 1) {
       </p>
     </article>
     <ul class="skills">
-      <li id="html">html</li>
-      <li id="css">css</li>
-      <li id="javascript">javascript</li>
+      ${tags}
     </ul>
     <button class='desktop-card-button${i}' id="popup" type="button">See Project</button>
   </div>
@@ -120,9 +128,7 @@ for (let i = 0; i < desktopProjects.length; i += 1) {
       </p>
     </article>
     <ul class="skills">
-      <li id="html">html</li>
-      <li id="css">css</li>
-      <li id="javascript">javascript</li>
+      ${tags}
     </ul>
     <button class = 'desktop-card-button${i}' id="popup" type="button">See Project</button>
   </div>
@@ -139,7 +145,7 @@ const changePopupData = (data) => {
   modalCompany.textContent = usingData.company;
   modalCounterText.textContent = usingData.counterText;
   modalYear.textContent = usingData.year;
-  modalIMage.src = usingData.cardImage1;
+  modalIMage.style.setProperty('background-image', `url(${usingData.cardImage1})`);
   modalDescription.textContent = usingData.description;
   modalSeeLive.href = 'https://www.google.com';
   modalSeeSource.href = 'https://www.github.com';

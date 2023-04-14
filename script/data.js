@@ -84,7 +84,7 @@ export const desktopProjects = [
       'A daily selection of privately personalized; no accounts or sign-ups required.',
     company2: 'CONOPY',
     no: 'detail1',
-    cardImage1: './images/desktop1.png',
+    cardImage1: './images/modal-image.png',
     counterText: 'Back End Dev',
     year: '2015',
     technologies: ['HTML', 'CSS', 'JavaScript'],
