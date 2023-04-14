@@ -274,7 +274,8 @@ body {
   padding: 4px 12px;
 }
 
-#popup {
+#popup,
+.popup {
   font-family: "Poppins", Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -391,13 +392,15 @@ body {
   border: solid #6070ff;
 }
 
-#popup:hover {
+#popup:hover,
+.popup:hover {
   cursor: pointer;
   color: #fff;
   background-color: #6070ff;
 }
 
-#popup:active {
+#popup:active,
+.popup:active {
   box-shadow: 2px 2px 5px #6070ff;
 }
 
@@ -526,24 +529,6 @@ textarea::placeholder {
   opacity: 1;
 }
 
-.modals {
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 16px;
-  gap: 12px;
-  position: absolute;
-  height: 713px;
-  left: calc(50% - 343px / 2);
-  right: calc(50% - 343px / 2);
-  top: 60px;
-  z-index: 2;
-  background: #fff;
-  border: 1px solid #dfe1e6;
-  border-radius: 16px;
-}
-
 .title {
   width: 259px;
   height: 36px;
@@ -560,46 +545,14 @@ textarea::placeholder {
   visibility: visible;
 }
 
-.modals .highlight-text {
-  margin-left: -90px;
-}
-
-.modals .skills {
-  margin-left: -115px;
-  margin-top: -20px;
-}
-
 .border {
   border: 1px solid #ebecf0;
   width: 100%;
   margin-top: -10px;
 }
 
-.modal-links {
-  display: flex;
-  margin-top: 6px;
-  margin-left: -15px;
-}
-
 .see-link {
   margin-right: 14px;
-}
-
-.modal-links a {
-  margin: 0 0.5rem;
-  font-weight: 700;
-  font-size: 14px;
-  color: #6070ff;
-  border-radius: 6px;
-  background: #fff;
-  border: 1px solid #7f8cff;
-  display: flex;
-  padding: 10px 23px;
-  align-items: center;
-}
-
-.desktopModal {
-  display: none;
 }
 
 /* side menu  */
@@ -614,8 +567,6 @@ textarea::placeholder {
   transform: translateX(100%);
   transition: all ease-in-out 1s;
   overflow-y: scroll;
-
-  /* display: none; */
 }
 
 .open-side-menu {
@@ -648,7 +599,111 @@ textarea::placeholder {
 
 /* side menu  */
 
+/* popup  */
+.modal-container {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  backdrop-filter: blur(15px);
+  background-color: rgb(193, 199, 208, 0.65);
+  z-index: 100;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal {
+  width: auto;
+  max-width: 1048px;
+  background-color: #fff;
+  padding: 0 20px 20px 20px;
+  margin: 20px;
+  border-radius: 16px;
+  transform: scale(0);
+  transition: all ease-in-out 0.5s;
+  position: relative;
+}
+
+.open-modal {
+  transform: scale(1);
+  transition: all ease-in-out 0.5s;
+}
+
+.open-modal-container {
+  display: flex;
+}
+
+.modal-image img {
+  width: 100%;
+}
+
+.modal-image {
+  width: 100%;
+  height: 90vh;
+  max-height: 220px;
+  max-width: 1000px;
+  background-position: center center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.modal-title {
+  margin-bottom: 0;
+}
+
+.modal-highlights {
+  margin-bottom: 20px;
+}
+
+.modal-buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 190px;
+}
+
+.button-icon {
+  height: 18px;
+  width: 18px;
+}
+
+.modal-buttons button {
+  display: flex;
+  align-items: center;
+  font-family: Poppins, sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0;
+  text-align: center;
+  padding: 2px;
+}
+
+.modal-cross {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  cursor: pointer;
+}
+
+/* popup  */
+
 @media screen and (min-width: 768px) {
+  /* popup  */
+  .modal-description {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .modal-description > div {
+    margin-left: 24px;
+  }
+
+  .modal-image {
+    max-height: 478px;
+  }
+
+  /* popup  */
+
   .landing-page {
     width: 100%;
     margin: auto;
@@ -664,17 +719,6 @@ textarea::placeholder {
 
   .mobile-container {
     display: none;
-  }
-
-  .mobile-popup-window .close-btn {
-    position: absolute;
-    color: #67798e;
-    margin-top: 32px;
-    margin-right: 15px;
-    display: flex;
-    align-self: flex-end;
-    align-content: flex-end;
-    font-size: 30px;
   }
 
   .desktop-container {
@@ -722,31 +766,11 @@ textarea::placeholder {
     transition: all 1s ease-out;
   }
 
-  .modal-links a {
-    margin: 0 0.5rem;
-    font-weight: 700;
-    font-size: 14px;
-    color: #6070ff;
-    border-radius: 6px;
-    background: #fff;
-    border: 1px solid #7f8cff;
-    display: flex;
-    padding: 10px 23px;
-    align-items: center;
-    margin-right: 0%;
-  }
-
   .tab-links a:hover {
     text-decoration: none;
     color: #344563;
     background-color: #e5e5e5;
     transform: scale(1.04);
-  }
-
-  .modal-links {
-    display: flex;
-    margin-top: 6px;
-    padding-left: 30px;
   }
 
   .nav-link:hover {
@@ -938,54 +962,6 @@ textarea::placeholder {
     width: 2px;
   }
 
-  .desktopModal {
-    display: grid;
-    grid-template-rows: repeat(4, 1fr);
-    place-items: center;
-    margin: 0;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    background: #c1c7d0;
-    height: 1000px;
-    visibility: hidden;
-  }
-
-  .desktopModal:target {
-    visibility: visible;
-    opacity: 1;
-  }
-
-  .desktopModal .card {
-    display: flex;
-    flex-direction: column;
-    border: 1px solid #dfe1e6;
-    width: 80%;
-    margin-top: 77px;
-    background: #fff;
-  }
-
-  .desktopModal .card-image {
-    width: 96%;
-    margin: 2%;
-    max-height: 350px;
-  }
-
-  .desktopModal .tonic-area {
-    color: #344563;
-    font-size: 2vw;
-    width: 96%;
-  }
-
-  .desktopModal .tonic-area2 {
-    display: flex;
-    flex-direction: row;
-    color: #344563;
-    font-size: 2vw;
-    margin: 2%;
-    width: 96%;
-  }
-
   .paragraph-description {
     font-size: 16px;
     font-weight: 400;
@@ -993,50 +969,6 @@ textarea::placeholder {
     color: #344563;
     margin-top: 20px;
     padding-top: 20px;
-  }
-
-  .desktopModal .cards-details {
-    color: #091e42;
-  }
-
-  .desktopModal .highlight-text {
-    margin: 10px 10px 10px 0;
-  }
-
-  .desktopModal .countertext {
-    margin: 10px;
-  }
-
-  .desktopModal .year {
-    margin-left: 10px;
-  }
-
-  .desktopModal .cards-description {
-    margin-left: 10px;
-    width: 67%;
-    font-family: "Poppins", sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 30px;
-    color: #344563;
-    margin-right: 34px;
-  }
-
-  .desktopModal .skills {
-    margin: 20px 10px 30px 0;
-    display: flex;
-    flex-flow: row wrap;
-    width: 298px;
-  }
-
-  .desktopModal .skills li {
-    background: #ebebff;
-    margin-right: 10px;
-    margin-bottom: 10px;
-    padding: 10px;
-    border-radius: 8px;
-    list-style: none;
   }
 
   .border {
