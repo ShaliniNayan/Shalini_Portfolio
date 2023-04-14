@@ -1,49 +1,49 @@
-import { desktopProjects, mobileProjects } from './data.js';
+import { desktopProjects, mobileProjects } from "./data.js";
 
-const hamburger = document.querySelector('#hamburger');
-const sideMenu = document.querySelector('#side-menu');
-const cross = document.querySelector('#cross');
-const body = document.querySelector('body');
-const menuLinks = document.querySelectorAll('.menu-link');
-const projectContainer = document.querySelector('#portfolio');
-const desktopContainer = document.querySelector('#desktop-portfolio');
-const modalTitle = document.querySelector('.modal-title');
-const modalCompany = document.querySelector('.modal-company');
-const modalCounterText = document.querySelector('.modal-countertext');
-const modalYear = document.querySelector('.modal-year');
-const modalIMage = document.querySelector('.modal-image');
-const modalDescription = document.querySelector('#modal-description');
-const modalSkills = document.querySelector('.modal-skills');
-const modalSeeLive = document.querySelector('#see-live');
-const modalSeeSource = document.querySelector('#see-source');
-const modal = document.querySelector('.modal');
-const modalContainer = document.querySelector('.modal-container');
+const hamburger = document.querySelector("#hamburger");
+const sideMenu = document.querySelector("#side-menu");
+const cross = document.querySelector("#cross");
+const body = document.querySelector("body");
+const menuLinks = document.querySelectorAll(".menu-link");
+const projectContainer = document.querySelector("#portfolio");
+const desktopContainer = document.querySelector("#desktop-portfolio");
+const modalTitle = document.querySelector(".modal-title");
+const modalCompany = document.querySelector(".modal-company");
+const modalCounterText = document.querySelector(".modal-countertext");
+const modalYear = document.querySelector(".modal-year");
+const modalIMage = document.querySelector(".modal-image");
+const modalDescription = document.querySelector("#modal-description");
+const modalSkills = document.querySelector(".modal-skills");
+const modalSeeLive = document.querySelector("#see-live");
+const modalSeeSource = document.querySelector("#see-source");
+const modal = document.querySelector(".modal");
+const modalContainer = document.querySelector(".modal-container");
 
 const openSideMenu = () => {
-  sideMenu.classList.add('open-side-menu');
-  body.style.overflow = 'hidden';
+  sideMenu.classList.add("open-side-menu");
+  body.style.overflow = "hidden";
 };
 
 const closeSideMenu = () => {
-  sideMenu.classList.remove('open-side-menu');
-  body.style.overflow = 'unset';
+  sideMenu.classList.remove("open-side-menu");
+  body.style.overflow = "unset";
 };
 
-hamburger.addEventListener('click', openSideMenu);
-cross.addEventListener('click', closeSideMenu);
+hamburger.addEventListener("click", openSideMenu);
+cross.addEventListener("click", closeSideMenu);
 
 for (let i = 0; i < menuLinks.length; i += 1) {
-  menuLinks[i].addEventListener('click', closeSideMenu);
+  menuLinks[i].addEventListener("click", closeSideMenu);
 }
 
 // popup
 // Mobile Version//
 for (let i = 0; i < mobileProjects.length; i += 1) {
   const data = mobileProjects[i];
-  const card = document.createElement('div');
-  card.classList.add('card');
+  const card = document.createElement("div");
+  card.classList.add("card");
 
-  let tags = '';
+  let tags = "";
   for (let index = 0; index < data.technologies.length; index += 1) {
     const element = data.technologies[index];
     tags += `<li id="html">${element}</li>`;
@@ -80,17 +80,18 @@ for (let i = 0; i < desktopProjects.length; i += 1) {
   const data = desktopProjects[i];
   const index = desktopProjects.indexOf(data);
 
-  let tags = '';
+  let tags = "";
   for (let index = 0; index < data.technologies.length; index += 1) {
     const element = data.technologies[index];
     tags += `<li id="html">${element}</li>`;
   }
 
-  const card = document.createElement('div');
-  card.classList.add('card');
+  const card = document.createElement("div");
+  card.classList.add("card");
 
-  card.innerHTML = index % 2 === 0
-    ? `
+  card.innerHTML =
+    index % 2 === 0
+      ? `
   <img class="card-image" src=${data.cardImage1} alt="desktopVersion" />
   <div class="tonic-area">
     <h2 class="cards-details">${data.cardTitle}</h2>
@@ -112,7 +113,7 @@ for (let i = 0; i < desktopProjects.length; i += 1) {
     <button class='desktop-card-button${i}' id="popup" type="button">See Project</button>
   </div>
   `
-    : `
+      : `
   <div class="tonic-area">
     <h2 class="cards-details">${data.cardTitle}</h2>
     <div class="highlights">
@@ -145,12 +146,15 @@ const changePopupData = (data) => {
   modalCompany.textContent = usingData.company;
   modalCounterText.textContent = usingData.counterText;
   modalYear.textContent = usingData.year;
-  modalIMage.style.setProperty('background-image', `url(${usingData.cardImage1})`);
+  modalIMage.style.setProperty(
+    "background-image",
+    `url(${usingData.cardImage1})`
+  );
   modalDescription.textContent = usingData.description;
-  modalSeeLive.href = 'https://www.google.com';
-  modalSeeSource.href = 'https://www.github.com';
+  modalSeeLive.href = "https://www.google.com";
+  modalSeeSource.href = "https://www.github.com";
   const { technologies } = usingData;
-  let tags = '';
+  let tags = "";
   for (let index = 0; index < technologies.length; index += 1) {
     const element = technologies[index];
     tags += ` <li >${element}</li>`;
@@ -166,34 +170,34 @@ const openModal = (data) => {
   scrollX = window.scrollX;
   scrollY = window.scrollY;
   changePopupData(data);
-  modalContainer.classList.add('open-modal-container');
+  modalContainer.classList.add("open-modal-container");
 
   setTimeout(() => {
-    modal.classList.add('open-modal');
-    body.style.overflow = 'hidden';
+    modal.classList.add("open-modal");
+    body.style.overflow = "hidden";
     window.scrollTo(0, 0);
   }, 500);
 };
 
 // close modal function
 const closeModal = () => {
-  modal.classList.remove('open-modal');
+  modal.classList.remove("open-modal");
   setTimeout(() => {
-    modalContainer.classList.remove('open-modal-container');
-    body.style.overflow = 'unset';
+    modalContainer.classList.remove("open-modal-container");
+    body.style.overflow = "unset";
     window.scrollTo(scrollX, scrollY);
   }, 500);
 };
 
 // bind the closing function
-document.querySelector('.modal-cross').addEventListener('click', closeModal);
+document.querySelector(".modal-cross").addEventListener("click", closeModal);
 
 // bind open popup function
 // desktop
 for (let index = 0; index < desktopProjects.length; index += 1) {
   document
     .querySelector(`.desktop-card-button${index}`)
-    .addEventListener('click', () => {
+    .addEventListener("click", () => {
       openModal(desktopProjects[index]);
     });
 }
@@ -202,7 +206,37 @@ for (let index = 0; index < desktopProjects.length; index += 1) {
 for (let index = 0; index < mobileProjects.length; index += 1) {
   document
     .querySelector(`.mobile-card-button${index}`)
-    .addEventListener('click', () => {
+    .addEventListener("click", () => {
       openModal(mobileProjects[index]);
     });
 }
+
+// Contact-form Validation
+
+const form = document.getElementById("contact-form");
+
+form.addEventListener("submit", (event) => {
+  event.preventDefault();
+
+  const name = document.getElementById("name");
+  const email = document.getElementById("email");
+  const message = document.getElementById("message");
+
+  if (!name.value.match(/^[a-zA-Z ]*$/)) {
+    setError(name, "Name must contain only letters and spaces");
+    return;
+  }
+
+  if (!email.value.match(/^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,}$/)) {
+    setError(email, "Please enter a valid email");
+    return;
+  }
+
+  if (message.value.length < 10) {
+    setError(message, "Message must be at least 10 characters long");
+    return;
+  }
+
+  // all fields are valid, submit form
+  form.submit();
+});
