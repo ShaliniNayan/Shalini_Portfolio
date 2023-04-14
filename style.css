@@ -687,6 +687,12 @@ textarea::placeholder {
 
 /* popup  */
 
+.error-message {
+  color: red;
+  font-style: italic;
+  display: none;
+}
+
 @media screen and (min-width: 768px) {
   /* popup  */
   .modal-description {
