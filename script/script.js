@@ -215,6 +215,8 @@ for (let index = 0; index < mobileProjects.length; index += 1) {
 const form = document.querySelector('#form');
 const errorMessage = document.querySelector('.error-message');
 const emailField = document.querySelector('#email');
+const userName = document.querySelector('#user_name');
+const something = document.querySelector('#message-something');
 
 const setError = () => {
   errorMessage.style.setProperty('display', 'block');
@@ -235,3 +237,26 @@ form.addEventListener('submit', (event) => {
     hideError();
   }
 });
+
+// preserve data
+const localData = JSON.parse(localStorage.getItem('formData'));
+if (localData) {
+  userName.value = localData.userName;
+  emailField.value = localData.email;
+  something.value = localData.textErea;
+}
+
+// save in local storage function
+const save = () => {
+  const formData = {
+    userName: userName.value,
+    email: emailField.value,
+    textErea: something.value,
+  };
+
+  localStorage.setItem('formData', JSON.stringify(formData));
+};
+
+userName.addEventListener('input', save);
+emailField.addEventListener('input', save);
+something.addEventListener('input', save);
