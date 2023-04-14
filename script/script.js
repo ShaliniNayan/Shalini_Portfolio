@@ -145,7 +145,10 @@ const changePopupData = (data) => {
   modalCompany.textContent = usingData.company;
   modalCounterText.textContent = usingData.counterText;
   modalYear.textContent = usingData.year;
-  modalIMage.style.setProperty('background-image', `url(${usingData.cardImage1})`);
+  modalIMage.style.setProperty(
+    'background-image',
+    `url(${usingData.cardImage1})`,
+  );
   modalDescription.textContent = usingData.description;
   modalSeeLive.href = 'https://www.google.com';
   modalSeeSource.href = 'https://www.github.com';
@@ -206,3 +209,29 @@ for (let index = 0; index < mobileProjects.length; index += 1) {
       openModal(mobileProjects[index]);
     });
 }
+
+// Contact-form Validation
+
+const form = document.querySelector('#form');
+const errorMessage = document.querySelector('.error-message');
+const emailField = document.querySelector('#email');
+
+const setError = () => {
+  errorMessage.style.setProperty('display', 'block');
+};
+
+const hideError = () => {
+  errorMessage.style.setProperty('display', 'none');
+};
+
+const isLowerCase = (input) => input === String(input).toLowerCase();
+
+form.addEventListener('submit', (event) => {
+  const lowercase = isLowerCase(emailField.value);
+  if (!lowercase) {
+    event.preventDefault();
+    setError();
+  } else {
+    hideError();
+  }
+});
