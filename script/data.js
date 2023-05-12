@@ -75,18 +75,18 @@ export const desktopProjects = [
   {
     // card 1 details
     id: '1',
-    cardTitle: 'TONIC',
+    cardTitle: 'SPOTRS LEAGUE CONFERANCE',
     description:
-      'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    company: 'CANOPY',
+      'Sports league is a unique initiative to promote all sports in region of India.',
+    company: 'SPORTS LEAGUE',
     cardTitle2: 'TONIC',
     description2:
       'A daily selection of privately personalized; no accounts or sign-ups required.',
     company2: 'CONOPY',
     no: 'detail1',
-    cardImage1: './images/modal-image.png',
-    counterText: 'Back End Dev',
-    year: '2015',
+    cardImage1: './images/Capstoneproject-1.png',
+    counterText: 'Front End Dev',
+    year: '2023',
     technologies: ['HTML', 'CSS', 'JavaScript'],
   },
 
